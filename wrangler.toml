@@ -1,0 +1,21 @@
+name  = "chat-connect-worker"
+main = "worker/index.js"
+compatibility_date = "2023-09-01"
+
+# KV Namespace for storing chat data
+# To use in production, create a KV namespace in the Cloudflare dashboard
+# and uncomment the following lines with your namespace ID
+# [kv_namespaces]
+# CHAT_MESSAGES = { binding = "CHAT_MESSAGES", id = "your-kv-namespace-id" }
+
+# Durable Object for handling WebSocket connections
+# Uncomment to enable when deploying to Cloudflare
+# [durable_objects]
+# bindings = [
+#   { name = "CHAT_ROOM", class_name = "ChatRoom" }
+# ]
+
+# [migrations]
+# tag = "v1"
+# new_classes = ["ChatRoom"]
+ 
