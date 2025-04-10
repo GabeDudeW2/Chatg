@@ -2,7 +2,7 @@ import  { Message } from '../types';
 
 // URL to your deployed Cloudflare Worker
 // Update this when you deploy your worker
-const WORKER_URL = 'https://chat-connect-worker.yourdomain.workers.dev';
+const WORKER_URL = 'https://chat.g-is-good.workers.dev';
 
 export const cloudflareWorkerService = {
   // Connect to WebSocket for real-time updates
