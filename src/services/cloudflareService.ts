@@ -1,7 +1,7 @@
 import  { Message } from '../types';
 
 // Cloudflare API URL (would be your actual Cloudflare Worker URL in production)
-const CLOUDFLARE_API_URL = 'https://chat-app-worker.yourdomain.workers.dev';
+const CLOUDFLARE_API_URL = 'https://chat.g-is-good.workers.dev';
 
 // In-memory room storage for demo
 const roomData: Record<string, {
